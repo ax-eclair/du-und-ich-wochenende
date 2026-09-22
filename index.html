@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#161933">
+  <meta name="description" content="Dieses Wochenende. Ein bisschen Musik, ein guter Abend. Du und ich?">
+  <title>Du & ich — dieses Wochenende</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23161933'/%3E%3Ctext x='32' y='47' text-anchor='middle' font-family='Georgia' font-size='48' fill='%23efca86'%3E%26%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css?v=weekend-cards-2">
+  <script src="script.js?v=mobile-nein-4" defer></script>
+</head>
+<body>
+  <div class="scene" aria-hidden="true"></div>
+  <div class="shade" aria-hidden="true"></div>
+  <header><a class="wordmark" href="./" aria-label="Einladung von vorne ansehen">du <i>&</i> ich.</a><span>Berlin · am Wochenende</span></header>
+  <main id="invitation">
+    <section class="question" aria-labelledby="question">
+      <p class="eyebrow"><span></span> Eine gute Idee für zwei</p>
+      <h1 id="question">Hast du<br><em>Zeit?</em></h1>
+      <p class="description" id="description">Dieses Wochenende.<br>Für ein Date mit mir.</p>
+      <div class="actions" id="actions">
+        <button class="yes" id="yes" type="button">Ja, sehr gern! <span aria-hidden="true">↗</span></button>
+        <div class="no-slot"><button class="no" id="no" type="button">Nein</button></div>
+      </div>
+      <p class="note" id="note" aria-live="polite">Gute Musik. Keine großen Pläne.</p>
+    </section>
+    <section class="date-options" id="date-options" aria-labelledby="options-title" hidden>
+      <div class="options-intro">
+        <p class="eyebrow"><span></span> Ein Ja. Drei Möglichkeiten.</p>
+        <h1 id="options-title" tabindex="-1">Worauf hast du <em>Lust?</em></h1>
+        <p class="options-hint"><span class="hover-hint">Fahr über ein Bild, um die Karte umzudrehen.</span><span class="tap-hint">Tipp auf ein Bild, um die Karte umzudrehen.</span></p>
+      </div>
+      <div class="date-grid">
+        <article class="date-card">
+          <div class="card-turn">
+            <button class="date-toggle card-face card-front" type="button" aria-expanded="false" aria-controls="squash-details" aria-label="Squash. Dann schauen wir weiter. Samstag / Sonntag. Mein Favorit. Details anzeigen." data-label="Squash. Dann schauen wir weiter. Samstag / Sonntag. Mein Favorit." aria-hidden="false">
+                <img src="activities/squash.png" alt="" width="1312" height="1199" loading="lazy" decoding="async">
+                <span class="card-photo-shade" aria-hidden="true"></span>
+                <span class="card-top"><span class="card-meta">01 / Samstag / Sonntag</span><span class="card-favorite"><span aria-hidden="true">♥</span> Mein Favorit</span></span>
+                <span class="card-caption"><span class="card-title">Squash. Dann schauen wir weiter.</span><span class="card-subtitle">Erst spielen, dann den Abend genießen.</span><span class="card-cue" aria-hidden="true">Details <span>↻</span></span></span>
+            </button>
+            <div class="card-face card-back" id="squash-details" aria-hidden="true" inert>
+                <span class="card-top"><span class="card-meta">01 / Samstag / Sonntag</span><span class="card-favorite"><span aria-hidden="true">♥</span> Mein Favorit</span></span>
+                <span class="card-title">Squash. Dann schauen wir weiter.</span>
+                <span class="card-copy" id="squash-copy">Mit deiner Vespa zum Squash? Du zeigst mir deine Fahrkünste – und wie flott sie mit einem 80-Kilo-Typen hinten drauf noch ist. Danach duschen, etwas essen und etwas trinken.</span>
+                <div class="card-actions">
+                  <a class="choose-activity" data-activity="squash" target="_blank" rel="noopener noreferrer" aria-disabled="true">Das machen wir <span aria-hidden="true">↗</span></a>
+                  <p class="whatsapp-note">Öffnet WhatsApp. Du sendest die Nachricht.</p>
+                  <button class="card-return" type="button">Zurück zum Bild <span aria-hidden="true">↻</span></button>
+                </div>
+            </div>
+          </div>
+        </article>
+        <article class="date-card">
+          <div class="card-turn">
+            <button class="date-toggle card-face card-front" type="button" aria-expanded="false" aria-controls="spree-details" aria-label="Mit dem Rad an die Spree. Samstag / Sonntag Details anzeigen." data-label="Mit dem Rad an die Spree. Samstag / Sonntag" aria-hidden="false">
+                <img src="activities/spree.png" alt="" width="1148" height="1371" loading="lazy" decoding="async">
+                <span class="card-photo-shade" aria-hidden="true"></span>
+                <span class="card-top"><span class="card-meta">02 / Samstag / Sonntag</span></span>
+                <span class="card-caption"><span class="card-title">Mit dem Rad an die Spree</span><span class="card-subtitle">Ein bisschen treiben lassen.</span><span class="card-cue" aria-hidden="true">Details <span>↻</span></span></span>
+            </button>
+            <div class="card-face card-back" id="spree-details" aria-hidden="true" inert>
+                <span class="card-top"><span class="card-meta">02 / Samstag / Sonntag</span></span>
+                <span class="card-title">Mit dem Rad an die Spree</span>
+                <span class="card-copy" id="spree-copy">Mit dem Rad an der Spree entlang. Danach duschen, etwas essen und etwas trinken.</span>
+                <div class="card-actions">
+                  <a class="choose-activity" data-activity="spree" target="_blank" rel="noopener noreferrer" aria-disabled="true">Das machen wir <span aria-hidden="true">↗</span></a>
+                  <p class="whatsapp-note">Öffnet WhatsApp. Du sendest die Nachricht.</p>
+                  <button class="card-return" type="button">Zurück zum Bild <span aria-hidden="true">↻</span></button>
+                </div>
+            </div>
+          </div>
+        </article>
+        <article class="date-card">
+          <div class="card-turn">
+            <button class="date-toggle card-face card-front" type="button" aria-expanded="false" aria-controls="climbing-details" aria-label="Klettern. Dann was essen. Samstag / Sonntag Details anzeigen." data-label="Klettern. Dann was essen. Samstag / Sonntag" aria-hidden="false">
+                <img src="activities/climbing.png" alt="" width="1148" height="1371" loading="lazy" decoding="async">
+                <span class="card-photo-shade" aria-hidden="true"></span>
+                <span class="card-top"><span class="card-meta">03 / Samstag / Sonntag</span></span>
+                <span class="card-caption"><span class="card-title">Klettern. Dann was essen.</span><span class="card-subtitle">Die etwas gesündere Variante.</span><span class="card-cue" aria-hidden="true">Details <span>↻</span></span></span>
+            </button>
+            <div class="card-face card-back" id="climbing-details" aria-hidden="true" inert>
+                <span class="card-top"><span class="card-meta">03 / Samstag / Sonntag</span></span>
+                <span class="card-title">Klettern. Dann was essen.</span>
+                <span class="card-copy" id="climbing-copy">Wir brechen den Ex-Fluch und gehen in die Boulderhalle, in die uns unsere Exen immer geschleppt haben. Danach duschen, zusammen chillen, etwas essen und etwas trinken.</span>
+                <div class="card-actions">
+                  <a class="choose-activity" data-activity="climbing" target="_blank" rel="noopener noreferrer" aria-disabled="true">Das machen wir <span aria-hidden="true">↗</span></a>
+                  <p class="whatsapp-note">Öffnet WhatsApp. Du sendest die Nachricht.</p>
+                  <button class="card-return" type="button">Zurück zum Bild <span aria-hidden="true">↻</span></button>
+                </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <div class="film-note" aria-hidden="true"><span>Ein bisschen wie im Film.</span><i>Nur in Berlin.</i></div>
+  </main>
+  <footer><span>Mal sehen, wohin der Abend führt.</span><span class="film-credit">La La Land · 2016</span></footer>
+  <div id="particles" aria-hidden="true"></div>
+</body>
+</html>
